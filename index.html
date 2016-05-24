@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css">
+		<title>Travel</title>
+	</head>
+	<body>
+	
+<!-- Start of Header -->
+		<header>
+				<nav>
+					<div class="logo">
+						<h2>Let's <span><img src="assets/logo.png" alt=""></span>Travel</h2>
+					</div>
+					<div class="fa fa-bars fa-2x"></div>
+					<ul class="navbar">
+						<li>
+							<a href="">Home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Hotels <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Flights <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Cars <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Cruises <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Tour <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="">Shortcodes</a>
+						</li>
+						
+						<li>
+							<a href="">Bonus <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="sub-menu">
+								<li><a href="">Submenu 1</a></li>
+								<li><a href="">Submenu 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="heroText">
+					<div id="weather"></div>
+					<h1>Amazing Italy</h1>
+					<h1>7 Day Tour</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis eius, accusamus, nihil ipsa reprehenderit sit repudiandae accusantium recusandae!</p>
+					<button class="buttonMedium">
+						<a href="#"><span><img src="assets/marker.png" alt=""></span> View our tours</a>
+					</button>
+				</div>
+
+				<div class="menu">
+					<div class="menuLabels">
+						<input type="radio" id="hotels" name="headermenu" checked="true">
+						<label for="hotels">
+							<h4>Hotels</h4>
+						</label>
+						<input type="radio" id="flights" name="headermenu">
+						<label for="flights">
+							<h4>Flights</h4>
+						</label>
+
+						<input type="radio" id="cars" name="headermenu">
+						<label for="cars">
+							<h4>Cars</h4>
+						</label>
+
+						<input type="radio" id="cruises" name="headermenu">
+						<label for="cruises">
+							<h4>Cruises</h4>
+						</label>
+
+						<input type="radio" id="activites" name="headermenu">
+						<label for="activites">
+							<h4>Activites</h4>
+						</label>
+					</div>
+
+					<div class="menuForm">
+						<form class="hotelsForm">
+							
+							<div class="formContent">
+								<label for="destination">
+									<h5>Your Destination</h5>
+								</label>
+								<div class="container">
+									<img src="assets/marker-2.png" alt="">
+									<input type="text" class="inputStyle" input size="30" id="destination" name="hotels" placeholder="Enter a destination or hotel name">
+								</div>
+							</div>
+
+							<div class="formContent">
+								<label for="checkin">
+									<h5>Check In</h5>
+								</label>
+								<div class="container">
+									<img src="assets/calendar.png" alt="">
+									<input type="date" class="inputStyle" id="checkin" name="hotels">
+								</div>
+							</div>
+
+							<div class="formContent">
+								<label for="checkout">
+									<h5>Check Out</h5>
+								</label>
+								<div class="container">
+									<img src="assets/calendar.png" alt="">
+									<input type="date" class="inputStyle" id="checkout" name="hotels">
+								</div>
+							</div>
+							
+							<div class="formContent">
+								<label for="kids">
+									<h5>Kids</h5>
+								</label>
+								<div class="container">
+									<select name="countries" class="inputStyle" id="kids">
+										<option value="0 kids" selected="true">00</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+									</select>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+							</div>	
+							
+							<div class="formContent">
+								<label for="adults">
+									<h5>Adults</h5>
+								</label>
+								<div class="container">
+									<select name="countries" class="inputStyle" id="adults">
+										<option value="01 adult" selected="true">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+									</select>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+							</div>	
+							
+							<div class="formContent">
+								<label for="rooms">
+									<h5>Rooms</h5>
+								</label>
+								<div class="container">
+									<select name="countries" class="inputStyle" id=" rooms">
+										<option value="01 room" selected="true">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+									</select>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+							</div>
+							
+							<button class="buttonMedium">
+								<a href="#"><span><img src="assets/search.png" alt=""></span> Search now</a>
+							</button>
+						</form>
+					</div>
+				</div>
+		</header>
+<!-- End of Header -->
+		
+		<section class="seaTours">
+			<h2>The Best Sea Tours</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, pariatur?</p>
+			<div class="gallery">
+				<figure class="galleryitem">
+					<img src="assets/tour-1.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>Bolivia</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $860</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="galleryitem">
+					<img src="assets/tour-2.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>Patagonia</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $750</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="galleryitem">
+					<img src="assets/tour-3.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>Torres Del Paine</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $600</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="galleryitem">
+					<img src="assets/tour-4.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>Santorini</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $1050</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="galleryitem">
+					<img src="assets/tour-5.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>Turkey</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $500</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="galleryitem">
+					<img src="assets/tour-1.jpg" alt="">
+					<figcaption>
+						<div class="tourTitle">
+							<h3>China</h3>
+							<img src="assets/five-star.png" alt="Five Stars">
+							<h4>From $700</h4>
+						</div>
+						<div class="tourFooter">
+							<div>
+								<p><img src="assets/people.png" alt=""><span>2</span> adults, <span>1</span> kids</p>
+								<p><img src="assets/calendar.png" alt="">July <span>19th</span> to July <span>26th</span></p>
+							</div>
+							<button>
+								<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="seaToursBanner">
+				<h4>From $960</h4>
+				<img src="assets/five-star.png" alt="Five Stars">
+				<h2>Bavaria Vacation Packages</h2>
+				<p>July <span>19TH</span> to July <span>26TH</span></p>
+			</div>
+		</section>
+		<!-- End of Sea Tours -->
+
+		<!-- Start of Special Offers -->
+		<section class="specialOffers">
+				<h2>Special Offers</h2>
+				<p>consectetur adipisicing elit. Error, pariatur?</p>
+				<div class="gallery">
+					<figure class="galleryitem">
+						<img src="assets/greece.jpg" alt="">
+						<figcaption>
+							<div class="specialTitle">
+								<img src="assets/five-star.png" alt="Five Stars">
+								<h3>Greece</h3>
+							</div>
+							<div class="specialFooter">
+								<ul class="specialOffers">
+									<li>
+										<h4><span>35</span> Tours</h4>
+									</li>
+									<li>
+										<h4><span>24</span> Cities</h4>
+									</li>
+									<li>
+										<h4><span>90</span> Hotels</h4>
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio soluta laboriosam, labore vero.</p>
+								<button>
+									<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+								</button>
+							</div>
+						</figcaption>
+					</figure>
+
+					<figure class="galleryitem">
+						<img src="assets/china.jpg" alt="">
+						<figcaption>
+							<div class="specialTitle">
+								<img src="assets/five-star.png" alt="Five Stars">
+								<h3>China</h3>
+							</div>
+							<div class="specialFooter">
+								<ul class="specialOffers">
+									<li>
+										<h4><span>35</span> Tours</h4>
+									</li>
+									<li>
+										<h4><span>24</span> Cities</h4>
+									</li>
+									<li>
+										<h4><span>90</span> Hotels</h4>
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio soluta laboriosam, labore vero.</p>
+								<button>
+									<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+								</button>
+							</div>
+						</figcaption>
+					</figure>
+
+					<figure class="galleryitem">
+						<img src="assets/canada.jpg" alt="">
+						<figcaption>
+							<div class="specialTitle">
+								<img src="assets/five-star.png" alt="Five Stars">
+								<h3>Canada</h3>
+							</div>
+							<div class="specialFooter">
+								<ul class="specialOffers">
+									<li>
+										<h4><span>35</span> Tours</h4>
+									</li>
+									<li>
+										<h4><span>24</span> Cities</h4>
+									</li>
+									<li>
+										<h4><span>90</span> Hotels</h4>
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio soluta laboriosam, labore vero.</p>
+								<button>
+									<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View More</h5></a>
+								</button>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+		</section>
+		<!-- End of Special Offers -->
+
+		<!-- Beginning of Most Popular -->
+		<section class="mostPopular">
+				<h2>Special Offers</h2>
+				<p>consectetur adipisicing elit. Error, pariatur?</p>
+
+				<article class="popularCountry">
+					<div class="gallery">
+						<figure class="galleryitem">
+							<img src="assets/italy-small.jpg" alt="">
+							<figcaption>
+								<h4>Maecenas Sit Amet</h4>
+								<h5><span>From $235</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/italy-small2.jpg" alt="">
+							<figcaption>
+								<h4>Aenean Iaculis Enim</h4>
+								<h5><span>From $180</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/italy-small3.jpg" alt="">
+							<figcaption>
+								<h4>Pellentesque Tempus</h4>
+								<h5><span>From $195</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/italy-small4.jpg" alt="">
+							<figcaption>
+								<h4>Donec Id Maximus</h4>
+								<h5><span>From $350</span> Per Person</h5>
+							</figcaption>
+						</figure>
+					</div>
+					
+					<div class="popularText">
+						<h3>Italy, Europe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ipsa omnis dolores vel soluta voluptas placeat alias ut nobis tempora a esse architecto dolore amet commodi, necessitatibus repellendus dignissimos mollitia.</p>
+						<h4>Best Cities</h4>
+						<div class="citiesList">
+							<ul class="bestCities">
+								<li><a href="#">&bull; Rome</a></li>
+								<li><a href="#">&bull; Venice</a></li>
+								<li><a href="#">&bull; Pisa</a></li>
+								<li><a href="#">&bull; Naples</a></li>
+							</ul>
+							<ul class="bestCities">
+								<li><a href="#">&bull; Bolgna</a></li>
+								<li><a href="#">&bull; Florence</a></li>
+								<li><a href="#">&bull; Genoa</a></li>
+								<li><a href="#">&bull; Turin</a></li>
+							</ul>
+							<ul class="bestCities">
+								<li><a href="#">&bull; Milan</a></li>
+								<li><a href="#">&bull; Capri</a></li>
+								<li><a href="#">&bull; Matera</a></li>
+								<li><a href="#">&bull; Pompeii</a></li>
+							</ul>
+						</div>
+						<button>
+							<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View All Places</h5></a>
+						</button>
+					</div>
+				</article>
+
+				<article class="popularCountry">
+					<div class="gallery">
+						<figure class="galleryitem">
+							<img src="assets/francesmall1.jpg" alt="">
+							<figcaption>
+								<h4>Maecenas Sit Amet</h4>
+								<h5><span>From $235</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/francesmall2.jpg" alt="">
+							<figcaption>
+								<h4>Aenean Iaculis Enim</h4>
+								<h5><span>From $180</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/francesmall3.jpg" alt="">
+							<figcaption>
+								<h4>Pellentesque Tempus</h4>
+								<h5><span>From $195</span> Per Person</h5>
+							</figcaption>
+						</figure>
+
+						<figure class="galleryitem">
+							<img src="assets/francesmall4.jpg" alt="">
+							<figcaption>
+								<h4>Donec Id Maximus</h4>
+								<h5><span>From $350</span> Per Person</h5>
+							</figcaption>
+						</figure>
+					</div>
+					
+					<div class="popularText">
+						<h3>France, Europe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi quia ducimus corporis eius dicta ab beatae debitis, maiores quod. Sint recusandae cumque reprehenderit excepturi facere voluptates neque assumenda, fugiat!</p>
+						<h4>Best Cities</h4>
+						<div class="citiesList">
+							<ul class="bestCities">
+								<li><a href="#">&bull; Rome</a></li>
+								<li><a href="#">&bull; Venice</a></li>
+								<li><a href="#">&bull; Pisa</a></li>
+								<li><a href="#">&bull; Naples</a></li>
+							</ul>
+							<ul class="bestCities">
+								<li><a href="#">&bull; Bolgna</a></li>
+								<li><a href="#">&bull; Florence</a></li>
+								<li><a href="#">&bull; Genoa</a></li>
+								<li><a href="#">&bull; Turin</a></li>
+							</ul>
+							<ul class="bestCities">
+								<li><a href="#">&bull; Milan</a></li>
+								<li><a href="#">&bull; Capri</a></li>
+								<li><a href="#">&bull; Matera</a></li>
+								<li><a href="#">&bull; Pompeii</a></li>
+							</ul>
+						</div>
+						<button>
+							<a href="#"><h5><span><img src="assets/flag.png" alt=""></span>View All Places</h5></a>
+						</button>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- End of Most Popular -->
+
+		<!-- Start of Footer -->
+
+		<footer class="footer">
+			<div class="footerbarBig">
+				<div class="logo">
+					<h2>Let's <span><img src="assets/logo.png" alt=""></span>Travel</h2>
+				</div>
+			</div>
+			<div class="footerbar">
+				<h5>Best Tours</h5>
+				<ul class="tourFlex">
+					<li><a href="#">Camping holidays</a></li>
+					<li><a href="#">Self-catering holidays</a></li>
+					<li><a href="#">Safaris and wildlife</a></li>
+					<li><a href="#">Activity and adventure</a></li>
+					<li><a href="#">Food and wine holidays</a></li>
+				</ul>
+			</div>
+			<div class="footerbar">
+				<h5>Popular Countries</h5>
+				<div class="footerCountries">
+					<ul class="footerFlex">
+						<li><a href="#">France</a></li>
+						<li><a href="#">Spain</a></li>
+						<li><a href="#">Ukraine</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">India</a></li>
+					</ul>
+					<ul class="footerFlex">
+						<li><a href="#">France</a></li>
+						<li><a href="#">Spain</a></li>
+						<li><a href="#">Ukraine</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">India</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footerbar">
+				<h5>Follow Us:</h5>
+				<button class="socialButton facebook">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a>
+					<div class="click">
+						<h5>12</h5>
+					</div>
+				</button>
+				
+				<button class="socialButton twitter">
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>twitter</a>
+					<div class="click"><h5>12</h5></div>
+				</button>
+				
+				<button class="socialButton google">
+					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>google+</a>
+					<div class="click"><h5>12</h5></div>
+				</button>
+				
+				<button class="socialButton pinterest">
+					<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>pinterest</a>
+					<div class="click"><h5>12</h5></div>
+				</button>
+			</div>
+			<div class="footerbarBig">
+				<h5>Subscribe</h5>
+				<form>
+					<input type="text" name="email" placeholder="EMAIL" maxlength="50">
+					<button>
+					<a href="#"><h5>Submit</h5></a>
+				</form>
+			</div>
+		</footer>
+
+		<footer class="footerBottom">
+			<nav>
+				<ul class="footerNav">
+					<li><a href="#"><h5>Privacy Policy</h5></a></li>
+					<li><a href="#"><h5>About Us</h5></a></li>
+					<li><a href="#"><h5>Support</h5></a></li>
+					<li><a href="#"><h5>FAQ</h5></a></li>
+					<li><a href="#"><h5>Blog</h5></a></li>
+					<li><a href="#"><h5>Forum</h5></a></li>
+				</ul>
+			</nav>
+			<p>&copy; 2015 All rights reserved LETSTRAVEL</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+		        <script>
+		            $(function() {
+		                $.simpleWeather({
+		                    location: 'London, UK',
+		                    woeid: '',
+		                    unit: 'c',
+		                    success: function(weather) {
+		                        html = '<h3>'+weather.city+' '+'<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h3>';
+		                        $("#weather").html(html);
+		                    },
+		                    error: function(error) {
+		                        $("#weather").html('<p>'+error+'</p>');
+		                    }
+		                });
+		            }); 
+				</script>
+	</body>
+</html>
